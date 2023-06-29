@@ -1,2 +1,12 @@
-/* Setting the height of the map */
+/* Setting the size of the map on browser */
 #map { height: 280px; } 
+
+/* Settings for mobile */
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+    width: 100vw;
+}

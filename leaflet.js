@@ -35,8 +35,15 @@ var map = L.map("map").setView([51.505, -0.09], 10);
         .setContent("I am a standalone popup.")
         .openOn(map);
 
+        var popup = L.popup();
+
         function onMapClick(e) {
-          alert("You clicked the map at " + e.latlng);
-      }
-      
-      map.on('click', onMapClick);
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(map);
+        }
+        
+        map.on('click', onMapClick);
+
+        
