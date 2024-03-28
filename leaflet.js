@@ -31,11 +31,11 @@ var map = L.map("map").setView([51.505, -0.09], 10);
       
       //standalone popup, no symbol on map
       var popup = L.popup()
-        .setLatLng([40.031435, -75.317588])
+        .setLatLng([40.031, -75.317])
       // LatLng(40.031435, -75.317588)
         .setContent("Magnolia Tree - Good low hanging branches")
         .openOn(map);
-        popup.bindPopup("did this work.?");
+        
 
         var popup = L.popup();
 
